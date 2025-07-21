@@ -1,0 +1,19 @@
+{
+  "name": "jq-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhaack/jq-testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhaack/jq-testing/issues"
+  },
+  "homepage": "https://github.com/mhaack/jq-testing#readme",
+  "description": ""
+}
