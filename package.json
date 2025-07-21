@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,15 @@
     "url": "https://github.com/mhaack/jq-testing/issues"
   },
   "homepage": "https://github.com/mhaack/jq-testing#readme",
-  "description": ""
+  "description": "",
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "jest": "^30.0.4",
+    "jmespath": "^0.16.0",
+    "jq.js": "^0.0.4",
+    "jsonpath": "^1.1.1",
+    "jsonpath-plus": "^10.3.0",
+    "node-jq": "^6.0.1"
+  }
 }
