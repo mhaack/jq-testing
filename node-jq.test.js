@@ -16,7 +16,7 @@ const data = {
 };
 
 test('node-jq - get user names', async () => {
-  const filter = '.users[].name';
-  const result = await jq.run(filter, data, { output: 'json' });
-  expect(JSON.parse(result)).toEqual(["John Doe", "Jane Smith"]);
+  const filter = '[.users[].name]';
+  const result = await jq.run(filter, JSON.stringify(data), { input: 'string', output: 'json' });
+  expect(result).toEqual(["John Doe", "Jane Smith"]);
 });

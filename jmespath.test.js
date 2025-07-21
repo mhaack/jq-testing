@@ -1,4 +1,4 @@
-const jq = require('jq.js');
+const jmespath = require('jmespath');
 
 const data = {
   "users": [
@@ -15,8 +15,8 @@ const data = {
   ]
 };
 
-test('jq.js - get user names', () => {
-  const filter = '.users[].name';
-  const result = jq.run(filter, JSON.stringify(data), { output: 'json' });
+test('jmespath - get user names', () => {
+  const filter = 'users[*].name';
+  const result = jmespath.search(data, filter);
   expect(result).toEqual(["John Doe", "Jane Smith"]);
 });
